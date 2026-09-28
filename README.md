@@ -9,7 +9,7 @@ The Detection Tool is a utility designed to analyze and process log files to ide
 - **Customizable**: Easily extendable to include additional patterns or analysis techniques.
 
 ## File Structure
-- `detector_v3.py`: The main script for processing log files.
+- `detector.py`: The main script for processing log files.
 - `sample-logs/`: Directory containing sample log files for testing.
   - `auth-1.log`
   - `auth-2.log`
@@ -31,12 +31,12 @@ Ensure you have Python installed on your system. This tool is compatible with Py
    ```
 3. Run the main script with the desired log file(s):
    ```bash
-   python3 detector_v3.py sample-logs/auth-1.log
+   python3 detector.py sample-logs/auth-1.log
    ```
 
 ## Extending the Tool
 To add new patterns or analysis techniques:
-1. Open `detector_v3.py` in a text editor.
+1. Open `detector.py` in a text editor.
 2. Locate the section where patterns are defined or analysis logic is implemented.
 3. Add your custom logic.
 
