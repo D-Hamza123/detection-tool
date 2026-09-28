@@ -23,7 +23,7 @@ Ensure you have Python installed on your system. This tool is compatible with Py
 ### Running the Tool
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/D-Hamza123/detection-tool.git
    ```
 2. Navigate to the project directory:
    ```bash
