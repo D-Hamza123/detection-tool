@@ -5,15 +5,19 @@ The Detection Tool is a utility designed to analyze and process log files to ide
 
 ## Features
 - **Log Analysis**: Processes log files to extract meaningful information.
-- **Pattern Matching**: Identifies specific patterns or keywords in log files.
+- **Authentication Log Monitoring**: Detects failed login attempts and alerts on repeated suspicious activity.
+- **Web Log Monitoring**: Identifies suspicious access to sensitive paths and tracks HTTP activity.
 - **Customizable**: Easily extendable to include additional patterns or analysis techniques.
 
 ## File Structure
 - `detector.py`: The main script for processing log files.
 - `sample-logs/`: Directory containing sample log files for testing.
-  - `auth-1.log`
-  - `auth-2.log`
-  - `auth-3.log`
+  - `auth logs/`: Contains authentication log samples.
+    - `auth-1.log`
+    - `auth-2.log`
+    - `auth-3.log`
+  - `web logs/`: Contains web log samples.
+    - `web-log1.log`
 
 ## Usage
 
@@ -29,10 +33,12 @@ Ensure you have Python installed on your system. This tool is compatible with Py
    ```bash
    cd detection-tool
    ```
-3. Run the main script with the desired log file(s):
+3. Run the main script to process authentication and web logs:
    ```bash
-   python3 detector.py sample-logs/auth-1.log
+   python3 detector.py
    ```
+
+The script will automatically process all logs in the `sample-logs/auth logs/` and `sample-logs/web logs/` directories.
 
 ## Extending the Tool
 To add new patterns or analysis techniques:
